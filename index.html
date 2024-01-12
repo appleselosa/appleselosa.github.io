@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Home</title>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Montserrat:wght@900&family=Playfair+Display:ital,wght@1,900&family=Quicksand:wght@700&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css?family=Chivo:300,700" rel="stylesheet">
+<style>
+* {box-sizing: border-box;}
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: Chivo;
+  transition: top 0.3s;
+  top: 0;
+  line-height: 0;
+  margin-right: auto;    
+  margin-left: auto;    
+  max-width: 100%;
+  width: 100%;
+  min-width: 1000px;
+  z-index: 1;
+  position: fixed;
+}
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 30px 16px;
+  text-decoration: none;
+
+}
+
+li a:hover:not(.active) {
+  background-color: #333;
+}
+.img1{
+  border-radius: 50%;
+  cursor: pointer;
+  float: left;
+  width: 50px;
+  margin-top: 5px;
+  margin-left:10px ;
+}
+
+.active {
+  background-color: #ffc13b;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+}
+
+.text {
+  
+  position: absolute;
+  top: 60px;
+  width: 110%;
+  text-align: right;
+  font-family: Playfair Display;
+  color: #ffc13b;
+  font-size: 75px;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+
+  <ul>
+    <a href="index.html"><img class="img1" src="icon.png"><a href=""></a>
+  <li style="font-family: Lora; font-size: 25px; float: left;"><a href="index.html">aa profile</a></li>
+  <li><a href="try_career.html">Career Talks</a></li>
+  <li><a href="try_sw.html">Strengths & Weaknesses</a></li>
+  <li><a href="try_gtkm.html">Get to know me</a></li>
+  <li><a class="active" href="index.html">Home</a></li>
+</ul>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="home1.png" style="width:1519px">
+  <div class="text">Apple Ann Danielle</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="home2.png" style="width:1519px">
+</div>
+
+<div class="mySlides fade">
+  <img src="home3.png" style="width:1519px">
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 5000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html> 

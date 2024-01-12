@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Get to know me</title>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Montserrat:wght@900&family=Playfair+Display:ital,wght@1,900&family=Quicksand:wght@700&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css?family=Chivo:300,700" rel="stylesheet">
+<style>
+* {box-sizing: border-box;}
+body {
+  background-image: url(me.png);
+  background-repeat: repeat-y;
+  background-attachment: scroll;
+  background-size: 1550px 1550px;
+  margin: 0;
+
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: Chivo;
+  background-color: #111;
+  transition: top 0.3s;
+  top: 0;
+  line-height: 0;
+  margin-right: auto;    
+  margin-left: auto;    
+  max-width: 100%;
+  width: 100%;
+  min-width: 1000px;
+  z-index: 1;
+  position: fixed;
+}
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 30px 16px;
+  text-decoration: none;
+
+}
+
+li a:hover:not(.active) {
+  background-color: #333;
+}
+
+.active {
+  background-color: #ffc13b;
+}
+.corner {
+  justify-content: space-between;
+  margin-left: 280px;
+  margin-right: 50px;
+  margin-top: 80px;
+  margin-bottom: 30px;
+  border-radius: 25px;
+  background-color: #F3F0F2;
+  border: 2px solid #73AD21;
+  padding: 20px; 
+  width: 1000px;
+  height: 350px; 
+}
+.text{
+  margin-left: 280px;
+}
+.img_1{
+  float: left;
+  margin-top: 15px;
+  display: flex;
+}
+.cover{
+  width: 900px;
+  height: 420px;
+  margin-top: 50px;
+  display: flex;
+  margin-left: 340px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+}
+.box{
+  margin: 15px;
+  width: 800px;
+  height: 420px;
+  background-color: white;
+  box-shadow: -1px 0 10px #000000; 
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.box:hover{
+  border: 2px solid yellow;
+}
+.img_2{
+  width: 270px;
+  height: 270px;
+  display: flex;
+}
+.container {
+  position: relative;
+  width: 32%;
+  display: block;
+  float: left;
+  padding: 15px;
+  padding-left: 50px;
+}
+
+.image2 {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  border-radius: 5px;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image2 {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text2 {
+  color: black;
+  font-size: 26px;
+  padding: 16px;
+  padding-left: 70px;
+}
+.img1{
+  border-radius: 50%;
+  cursor: pointer;
+  float: left;
+  width: 50px;
+  margin-top: 5px;
+  margin-left:10px ;
+}
+
+h1{
+  text-align: center;
+  margin-top: 20px;
+  font-family: chivo;
+  text-shadow: -1px 5px 10px darkgrey;
+  font-size: 50px;
+}
+.img-gal{
+  width: 80%;
+  margin: 40px auto 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 30px;
+}
+.img-gal img{
+  width: 100%;
+  cursor: pointer;
+}
+.img-gal img:hover{
+  transform: scale(0.8) rotate(-15deg);
+  border-radius: 20px;
+  box-shadow: 0 32px 75px rgba(68, 77, 136, 0.2);
+}
+
+p{
+  font-family: monospace; 
+  font-size:15px;
+}
+a{
+  color: black;
+}
+
+</style>
+</head>
+<a name="top"></a>
+<body>
+
+
+  <ul>
+  <a href="index.html"><img class="img1" src="icon.png"><a href=""></a>
+  <li style="font-family: Lora; font-size: 25px; float: left;"><a href="index.html">aa profile</a></li>
+  <li><a href="try_career.html">Career Talks</a></li>
+  <li><a href="try_sw.html">Strengths & Weaknesses</a></li>
+  <li><a class="active" href="try_gtkm.html">Get to know me</a></li>
+  <li><a href="index.html">Home</a></li>
+</ul>
+<div class="corner">
+  <div class="image">
+  <img class="img_1" src="me2.png" height="250px" width="250px">
+
+  </div>
+  <div class="text">
+    <h2>APPLE ANN DANIELLE M. SELOSA</h2>
+    <p>My name is <b>Apple Ann Danielle Merced Selosa.</b> I am a 19-going-20 year old teenager born on July 24, 2004. </p> <p>In <b>junior high,</b> I was under the <b>STE program</b> in <b>Rizal High School</b> and in <b>senior high,</b> at the same school, I took the <b>ICT strand.</b> I graduated last year, July 2023. Now, I am currently in my first year studying at <b>Pamantasan ng Lungsod ng Pasig</b> under <b>BSIT program.</b></p> <p>Under <b>My Gallery,</b> you'll see pictures of different people who are a big part of my life. You will also dee pictures of me <b><i>through the years.</i></b></p>
+    <p><b><center>My socials:</b></p>
+      <p><a href="https://www.facebook.com/applwanndanielle.selosa?mibextid=LQQJ4d">Facebook</a>   &nbsp&nbsp&nbsp    <a href="https://www.instagram.com/_aaadanielle?igsh=MXNjMTN6Zm51dnJsdw%3D%3D&utm_source=qr"> Instagram</a>   &nbsp&nbsp&nbsp      <a href="https://x.com/hk_ck1?s=21"> Twitter</a></p></center>
+</div>
+</div>
+<h1>MY GALLERY</h1>
+<div class="img-gal">
+    <img src="mee1.png">
+    <img src="mee2.png">
+    <img src="mee3.png">
+  </div>
+<hr/>
+<h1>MY EDUCATIONAL BACKGROUND</h1>
+<div class="cover">
+  <div class="box">
+      <img class="img_2" src="pca.jpg">
+    <h2>PRIMARY</h2>
+    <p>I studied at Pasig Christian Academy for 7 years and <br> I graduated with honors.</p>
+  </div>
+    <div class="box">
+      <img class="img_2" src="rhs.jpg">
+    <h2>SECONDARY</h2>
+    <p>I studied at Rizal High School <br> for 6 years and I graduated <br> with high honors.</p>
+  </div>
+    <div class="box">
+      <img class="img_2" src="plp.jpg">
+    <h2>TERTIARY</h2>
+    <p>I am currently on my first year at Pamantasan ng Lungsod ng Pasig under BSIT program. </p>
+  </div>
+  </div>
+  <hr/>
+  <h1>MY HOBBIES, SKILLS, AND TALENTS</h1>
+  <div class="container">
+  <img src="read.png" class="image2" style="width:100%">
+  <div class="middle">
+    <div class="text2">Reading</div>
+  </div>
+</div>
+<div class="container">
+  <img src="movies.png" class="image2" style="width:100%">
+  <div class="middle">
+    <div class="text2">Watching Movies / Series</div>
+  </div>
+</div>
+<div class="container">
+  <img src="draw.png" class="image2" style="width:100%">
+  <div class="middle">
+    <div class="text2">Drawing</div>
+  </div>
+</div>
+<div class="container">
+  <img src="vball.png" class="image2" style="width:100%">
+  <div class="middle">
+    <div class="text2">Playing Volleyball</div>
+  </div>
+</div>
+<div class="container">
+  <img src="bminton.png" class="image2" style="width:100%">
+  <div class="middle">
+    <div class="text2">Playing Badminton</div>
+  </div>
+</div>
+<div class="container">
+  <img src="sing.png" class="image2" style="width:100%">
+  <div class="middle">
+    <div class="text2">Singing</div>
+  </div>
+</div>
+<div class="container">
+  <img src="photog.png" class="image2" style="width:100%">
+  <div class="middle">
+    <div class="text2">Photography</div>
+  </div>
+</div><div class="container">
+  <img src="design.png" class="image2" style="width:100%">
+  <div class="middle">
+    <div class="text2">Designing</div>
+  </div>
+</div><div class="container">
+  <img src="edit.png" class="image2" style="width:100%">
+  <div class="middle">
+    <div class="text2">Editing</div>
+  </div>
+</div>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<p><center><a href="#top">back to the top</a></center></p>
+</body>
+</html> 
